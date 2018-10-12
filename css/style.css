@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url(../img/bg.jpg);
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+.svg-burger-icon {
+	width: 2.9%;
+	height: 0%;
+	align-self: center;
+}
+
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Layout */
+.ba-container {
+	max-width: 751px;
+
+}
+
+.ba-header {
+	padding-top: 68px;
+	padding-bottom: 61px;
+	padding-left: 3px;
+}
+
+
+.ba-header-bar,
+.ba-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ba-navigation {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	list-style: none;
+	font-size: 12.14px;
+	max-width: 358px;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
+}
+
+
+.ba-navigation li {
+	padding-right: 47.5px;
+	padding-top: 5px;
+
+}
+
+.ba-product-section {
+	background: #f4f4f4;
+	width: 100%;
+	display: flex;
+}
+
+.ba-product-section>[class*="ba-col-"] {
+	padding-left: 30px;
+}
+
+.ba-product-picture__gallery {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 17px;
+	margin-top: 27px
+}
+
+.ba-product-picture__gallery li {
+	padding-right: 17px;
+}
+
+img.product-image {
+	padding-top: 37px;
+	padding-left: 14px;
+}
+
+.ba-product-picture {
+	position: relative;
+}
+
+img.huarachi {
+	position: absolute;
+	top: 21%;
+	left: 3%;
+}
+
+.ba-product-overview__model-info {
+	display: flex;
+}
+
+.ba-product-overview {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 24px;
+}
+
+.ba-col-1 {
+	width: 8.333%;
+}
+
+.ba-col-2 {
+	width: 16.667%;
+}
+
+.ba-col-3 {
+	width: 25%;
+}
+
+.ba-col-4 {
+	width: 33.334%;
+}
+
+.ba-col-5 {
+	width: 41.667%;
+}
+
+.ba-col-6 {
+	width: 50%;
+}
+
+.ba-col-7 {
+	width: 58.33%;
+}
+
+.ba-col-8 {
+	width: 66.667%;
+}
+
+.ba-col-9 {
+	width: 75%;
+}
+
+.ba-col-10 {
+	width: 83.334%;
+}
+
+.ba-col-11 {
+	width: 91.667%;
+}
+
+.ba-col-12 {
+	width: 100%;
+}
