@@ -2,7 +2,9 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: url(../img/bg.jpg);
+	background: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* Typography */
@@ -54,6 +56,7 @@ textarea {}
 	width: 2.9%;
 	height: 0%;
 	align-self: center;
+	cursor: pointer;
 }
 
 
@@ -84,13 +87,8 @@ ul {
 }
 
 .ba-navigation {
-	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
-	color: #fff;
 	list-style: none;
-	font-size: 12.14px;
 	max-width: 358px;
-	font-weight: 200;
 	margin: 0;
 	padding: 0;
 }
@@ -98,34 +96,63 @@ ul {
 
 .ba-navigation li {
 	padding-right: 47.5px;
-	padding-top: 5px;
+	margin-top: 2px;
+
 
 }
 
+.ba-navigation a {
+	cursor: pointer;
+	font-size: 12.14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 200;
+}
+
+.ba-navigation li:hover a {
+	border-bottom: 1px solid #fff;
+}
+
 .ba-product-section {
-	background: #f4f4f4;
 	width: 100%;
 	display: flex;
+	box-shadow: 46px 0 0 -20px rgba(255, 249, 249, 0.4), -46px 0 0 -20px rgba(255, 248, 248, 0.4), 23px 0 0 -10px rgba(255, 246, 246, 0.4), -23px 0 0 -10px rgba(255, 242, 242, 0.4);
+}
+
+
+.ba-product-section>*:nth-child(1) {
+	background: #f4f4f4;
+}
+
+.ba-product-section>*:nth-child(2) {
+	background: #fff;
 }
 
 .ba-product-section>[class*="ba-col-"] {
 	padding-left: 30px;
 }
 
-.ba-product-picture__gallery {
+.ba-product-picture-gallery {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 17px;
 	margin-top: 27px
 }
 
-.ba-product-picture__gallery li {
+.ba-product-picture-gallery li {
 	padding-right: 17px;
+}
+
+.ba-product-picture-gallery li:hover {
+	opacity: 0.4;
 }
 
 img.product-image {
 	padding-top: 37px;
 	padding-left: 14px;
+	z-index: 2;
+	position: relative;
 }
 
 .ba-product-picture {
@@ -133,23 +160,148 @@ img.product-image {
 }
 
 img.huarachi {
+	z-index: 1;
 	position: absolute;
 	top: 21%;
 	left: 3%;
 }
 
-.ba-product-overview__model-info {
+.ba-product-type {
 	display: flex;
+	margin-bottom: 13px;
+}
+
+
+.ba-product-type__name {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+}
+
+.ba-product-type__rating {
+	align-self: center;
+	padding-left: 17px;
 }
 
 .ba-product-overview {
 	display: flex;
 	flex-direction: column;
+	margin-top: 59px;
+	padding-left: 1px;
 }
 
 .title {
 	font-size: 24px;
 }
+
+
+.ba-product-overview__title {
+
+	color: #000000;
+	font-size: 21px;
+	line-height: 1.4;
+	margin-bottom: 11px;
+}
+
+.ba-product-overview__title--color {
+	color: #5e4fff;
+}
+
+.ba-product-overview__title--new {
+	position: relative;
+}
+
+.ba-product-overview__title--new:before {
+	display: inline-block;
+	position: absolute;
+	/*content: attr(NEW);*/
+	content: "NEW";
+	top: -32px;
+	left: 1px;
+	color: #fff;
+	background: #FCA505;
+	padding: 4px 6px;
+	font-size: 14px;
+}
+
+.ba-product-overview__price {
+	font-size: 22px;
+	color: #000000;
+	margin-bottom: 22px;
+
+}
+
+.ba-product-overview__price--currency:before {
+	content: "$";
+	padding-right: 2px;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+label {
+	color: #000;
+	cursor: pointer;
+	min-width: 24px;
+	text-align: center;
+	font-size: 14.57px;
+	padding: 2px 0px;
+	border: 1px solid transparent
+}
+
+input[type=radio]:not(:last-child) {
+	padding-right: 5px;
+}
+
+input[type=radio]:checked+label {
+	border: 1px solid black;
+}
+
+.ba-product-overview-size_title {
+	font-size: 12px;
+	/* Approximation due to font substitution */
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1px;
+}
+
+.ba-product-overview-size_title::first-letter {
+	text-transform: uppercase;
+}
+
+.ba-product-overview-size_options {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 25px;
+	margin-bottom: 36px;
+}
+
+.ba-product-overview__buttons {
+	font-size: 12px;
+	padding: 7px 0px;
+	text-transform: uppercase;
+	background: #fff;
+	border: 1px solid #000;
+	text-align: center;
+	width: 53%;
+}
+
+.ba-product-overview__buttons+.ba-product-overview__buttons {
+	margin-top: 4px;
+}
+
+.ba-product-overview__buttons:hover {
+	background-color: #a200b8;
+	color: #fff;
+	border: 1px solid transparent;
+
+}
+
+
 
 .ba-col-1 {
 	width: 8.333%;

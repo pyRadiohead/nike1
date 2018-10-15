@@ -3,11 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Start</title>
+	<title>Nike</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="" />
+	<meta name="description" content="Nike shoes overview" />
 	<meta name="keywords" content="" />
 	<link rel="icon" href="favicon.png" />
 	<link rel="stylesheet" href="css/normalize.css" />
@@ -24,21 +24,21 @@
 				</a>
 				<nav class="ba-header-bar__navigation">
 					<ul class="ba-navigation">
-						<li>Lifestyle</li>
-						<li>Running</li>
-						<li>Football</li>
-						<li>Skateboarding</li>
+						<li><a href="#">Lifestyle</a></li>
+						<li><a href="#">Running</a></li>
+						<li><a href="#">Football</a></li>
+						<li><a href="#">Skateboarding</a></li>
 					</ul>
 				</nav>
 				<img class="svg-burger-icon" src="./img/menu.svg" alt="">
 			</div>
 		</header>
-		<main class="ba-product-section">
+		<article class="ba-product-section">
 			<div class="ba-col-8">
 				<div class="ba-product-picture">
-					<img class="huarachi" src="./img/huarachi.png" alt=" huarachi-text">
 					<img class="product-image" src="./img/new-nike.png" alt="product-picture">
-					<ul class="ba-product-picture__gallery">
+					<img class="huarachi" src="./img/huarachi.png" alt=" huarachi-text">
+					<ul class="ba-product-picture-gallery">
 						<li><img src="./img/small1.png" alt="small1"> </li>
 						<li><img src="./img/small2.png" alt="small2"> </li>
 						<li><img src="./img/small3.png" alt="small3"> </li>
@@ -47,18 +47,29 @@
 			</div>
 			<div class="ba-col-4">
 				<div class="ba-product-overview">
-					<h1 class="title">THE <span>RUNNING</span>
-						HAS JUST BEGUN</h1>
-					<h4 class="ba-product-overview__name">Huarache</h4>
-					<img src="./img/Forma 1.png" alt="">
-					<div class="ba-product-overview__price">
+					<h1 class="ba-product-overview__title ba-product-overview__title--new" data-tip="NEW">THE <span class="ba-product-overview__title ba-product-overview__title--color">RUNNING</span>
+						<br>HAS JUST BEGUN</h1>
+					<div class="ba-product-type">
+						<p class="ba-product-type__name">Huarache</p>
+						<img class="ba-product-type__rating" src="./img/Forma 1.png" alt="">
+					</div>
+
+					<div class="ba-product-overview__price ba-product-overview__price--currency">
 						200
 					</div>
-					<div class="ba-product-overview__size"></div>
-					<div class="ba-product-overview-buttons"></div>
+					<h6 class="ba-product-overview-size_title">size</h6>
+					<form class="ba-product-overview-size_options" id="form">
+						<input type="radio" id="option-one" name="selector"><label for="option-one">7</label>
+						<input type="radio" id="option-two" name="selector"><label for="option-two">8</label>
+						<input type="radio" id="option-three" name="selector"><label for="option-three">9</label>
+						<input type="radio" id="option-four" name="selector"><label for="option-four">10</label>
+						<input type="radio" id="option-five" name="selector"><label for="option-five">11</label>
+					</form>
+					<button class="ba-product-overview__buttons" type="submit" form="form" value="submit">add to cart</button>
+					<button class="ba-product-overview__buttons" type="#" value="wishlist">wishlist</button>
 				</div>
 			</div>
-		</main>
+		</article>
 	</div>
 	<footer class="ba-footer">
 
